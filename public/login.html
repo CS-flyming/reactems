@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <title>实验室信息管理系统@0.1</title>
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-default/index.css">
+    <link rel="stylesheet" href="/lib/css/login.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="login-page">
+            <div class="login-container">
+                <div>
+                    <img src="/lib/img/1.jpg" class="r-img">
+                </div>
+                <div>
+                    <h2 class="login-title">实验室信息管理系统</h2>
+                    <el-form :label-position="labelPosition" label-width="80px" :model="formLabelAlign" class="login-form" :rules="rules" ref="ruleForm">
+                        <el-form-item label="账号" prop="name">
+                            <el-input v-model="formLabelAlign.name"></el-input>
+                        </el-form-item>
+                        <el-form-item label="密码" prop="password">
+                            <el-input v-model="formLabelAlign.password" type="password"></el-input>
+                        </el-form-item>
+                        <!-- <el-form-item label="验证码" prop="randCode">
+                            <el-row>
+                                <el-col :span="12">
+                                    <el-input v-model="formLabelAlign.randCode"></el-input>
+                                </el-col>
+                                <el-col :span="6">
+                                    <img src="randCodeImage" alt="验证码" class="yzm" />
+                                </el-col>
+                                <el-col :span="6">
+                                    <span class="chang-yzm">换一张</span>
+                                </el-col>
+                            </el-row>
+                        </el-form-item> -->
+                        <el-form-item style="margin-left: 80px;">
+                            <el-button type="primary" class="login-btn" @click="onSubmit">登录</el-button>
+                        </el-form-item>
+                    </el-form>
+                </div>
+            </div>
+            <div class="wx-qrcode">
+                <div class="wx-text">实验管理系统公众号</div> <img src="/lib/img/qrcode.jpg"></div>
+        </div>
+    </div>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/jquery.cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="https://unpkg.com/vue/dist/vue.min.js"></script>
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+    <script src="/lib/js/login.js"></script>
+</body>
+
+</html>

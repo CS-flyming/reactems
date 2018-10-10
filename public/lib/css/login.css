@@ -1,0 +1,76 @@
+img {
+    border: none;
+    vertical-align: middle;
+}
+.login-page {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-size: cover;
+}
+.login-container{
+	border-radius: 10px;
+    border: 2px solid #99a9bf;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 320px;
+    background: #fff;
+}
+.r-img {
+    height: 320px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.login-title {
+    font-size: 24px;
+    text-align: center;
+}
+.login-form {
+    width: 400px;
+    padding: 0 15px;
+}
+
+.yzm {
+    width: 100%;
+    height: 35px;
+}
+.chang-yzm {
+    margin-left: 10px;
+    cursor: pointer;
+}
+.login-btn {
+    width: 240px;
+}
+.wx-qrcode{
+    width: 140px;
+    height: 170px;
+    background: #e5e5e5;
+    text-align: center;
+    position: fixed;
+    right: 0;
+    top: 20%;
+}
+.wx-text {
+	font-size: 14px;
+    height: 20px;
+    margin: 5px auto;
+}
+.wx-qrcode>img {
+    width: 129px;
+}
